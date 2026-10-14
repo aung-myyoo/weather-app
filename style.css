@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+  background: linear-gradient(160deg, #4facfe 0%, #00f2fe 100%);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+.search input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d7dce2;
+  font-size: 15px;
+  outline: none;
+}
+
+.search input:focus {
+  border-color: #4facfe;
+}
+
+.search button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #1f6feb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #1a5fd1;
+}
+
+.status {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #6b7280;
+  min-height: 18px;
+}
+
+.status.error {
+  color: #d64545;
+}
+
+.weather {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather.hidden {
+  display: none;
+}
+
+#location {
+  margin: 0;
+  font-size: 22px;
+  color: #1a1d27;
+}
+
+.updated {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #9aa0a6;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 52px;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1d27;
+}
+
+.description {
+  margin: 4px 0 18px;
+  color: #4b5563;
+  text-transform: capitalize;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #eef0f3;
+  border-bottom: 1px solid #eef0f3;
+  padding: 14px 0;
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 12px;
+  color: #9aa0a6;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  gap: 6px;
+}
+
+.forecast .day {
+  flex: 1;
+  background: #f5f7fa;
+  border-radius: 12px;
+  padding: 10px 4px;
+  font-size: 13px;
+  color: #374151;
+}
+
+.forecast .day .name {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.forecast .day .temps {
+  display: block;
+  color: #6b7280;
+}
